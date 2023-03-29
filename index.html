@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://kit.fontawesome.com/c154063bde.js" crossorigin="anonymous"></script>
+    <style>
+      div .main {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        /*justify-content: center;*/
+        width: auto;
+      }
+
+      div .col {
+        padding: 0;
+      }
+
+      .tracy1 {
+        opacity: 0.2;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      .tracy2 {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+
+      .tracy1,
+      .tracy2 {
+        width: 800px;
+        height: 700px;
+      }
+
+      .name-text {
+        margin-top: -665px;
+        /*margin-left: 100px;*/
+        font-family: "kunstler Script";
+        font-size: 70px;
+        font-weight: 900;
+        color: #44043e;
+        text-align: center;
+      }
+
+      .about {
+        width: 90%;
+        margin-left: 30px;
+      }
+
+      .about p {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .hits {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .heading {
+        font-size: 32px;
+        font-weight: 500;
+        margin-left: 65px;
+      }
+
+      .hit-songs {
+        list-style: none;
+        padding: 0;
+        margin-left: 65px;
+      }
+
+      li {
+        font-size: 18px;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+
+      .listen-text {
+        margin-top: -100px;
+        color: white;
+        margin-left: 128px;
+        font-size: 32px;
+        font-weight: 500;
+      }
+
+      .listen-text p {
+        margin-bottom: 0;
+      }
+
+      .spotify {
+        color: #1fdf64;
+        margin-left: -67px;
+        margin-bottom: 17px;
+      }
+
+      .youtube {
+        color: #ff0000;
+        margin-bottom: 15px;
+        margin-left: 23px;
+      }
+
+      .itunes {
+        width: 31px;
+        margin-left: 23px;
+        margin-bottom: 34px;
+      }
+
+      .soundcloud {
+        width: 45px;
+        margin-left: 23px;
+        margin-bottom: 30px;
+      }
+
+      .deezer {
+        width: 31px;
+        margin-left: 23px;
+        margin-bottom: 36px;
+      }
+
+      .tidal {
+        width: 31px;
+        margin-left: 23px;
+        margin-bottom: 35px;
+        background-color: white;
+        border-radius: 50%;
+      }
+
+      @media screen and (max-width: 576px) {
+        .main {
+          padding: 0;
+          width: 100%;
+        }
+
+        div .row {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        }
+
+        .col1 {
+          width: 100%;
+          background-color: #020202;
+        }
+
+        .col2 {
+          width: 100%;
+        }
+
+        .tracy1,
+        .tracy2 {
+          width: 500px;
+        }
+
+        .listen-text {
+          margin-top: -100px;
+          color: white;
+          margin-left: 95px;
+          font-size: 32px;
+          font-weight: 500;
+        }
+
+        .listen-text p {
+          margin-bottom: 0;
+          margin-left: 30px;
+        }
+
+        .youtube,
+        .deezer,
+        .itunes,
+        .soundcloud,
+        .tidal {
+          margin-left: 15px;
+        }
+
+        .name-text {
+          margin-top: -680px;
+          font-family: "kunstler Script";
+          font-size: 65px;
+          font-weight: 900;
+          color: #44043e;
+          text-align: center;
+        }
+
+        .about {
+          width: 90%;
+          margin-left: 20px;
+        }
+
+        .about p {
+          font-family: "Poppins", sans-serif;
+          margin-top: -12px;
+        }
+
+        .heading {
+          font-size: 32px;
+          font-weight: 500;
+          margin-left: 40px;
+        }
+
+        .hit-songs {
+          list-style: none;
+          padding: 0;
+          margin-left: 40px;
+        }
+
+        li {
+          font-size: 16px;
+          margin-bottom: 10px;
+          font-weight: 500;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid main d-flex m-0">
+      <div class="row">
+        <div class="col col1">
+          <div class="image">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/036/original/Tracy-Chapman.jpg?1680086594" class="img-fluid tracy2" alt="" />
+            <div class="listen-text">
+              <p>Listen now</p>
+              <a href="https://open.spotify.com/artist/7oPgCQqMMXEXrNau5vxYZP" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-spotify spotify"></i></a>
+              <a href="https://www.youtube.com/watch?v=mltoOQIK-fI" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube youtube"></i></a>
+              <a href="https://www.deezer.com/en/playlist/4880895984" target="_blank" rel="noopener noreferrer"
+                ><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/037/original/deezer-svgrepo-com.png?1680086622" alt="" class="deezer"
+              /></a>
+              <a href="https://music.apple.com/us/artist/tracy-chapman/5796121" target="_blank" rel="noopener noreferrer">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/038/original/ITunes_logo.svg.png?1680086821" alt="" class="itunes"
+              /></a>
+              <a href="https://soundcloud.com/tracychapmanofficial" target="_blank" rel="noopener noreferrer"
+                ><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/039/original/soundcloud-svgrepo-com.png?1680086832" alt="" class="soundcloud"
+              /></a>
+              <a href="https://tidal.com/browse/artist/242" target="_blank" rel="noopener noreferrer"
+                ><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/040/original/tidal-svgrepo-com.png?1680086849" alt="" class="tidal"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="col col2">
+          <div class="image">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/036/original/Tracy-Chapman.jpg?1680086594" class="img-fluid tracy1" alt="" />
+            <div class="name-text">
+              <p>Tracy Chapman</p>
+            </div>
+            <div class="about text-center">
+              <p>
+                Tracy Chapman is a multiple-awarding winning American singer-songwriter. She is best known for her hit singles <i>"Fast Car"</i> and <i>"Give Me One Reason".</i> Her debut album, <b>Tracy Chapman</b>, became a commercial success, and
+                was certified 6× Platinum by the Recording Industry Association of America.
+              </p>
+            </div>
+            <div class="hits">
+              <p class="heading">Hits</p>
+              <ul class="hit-songs">
+                <li>Fast Car</li>
+                <li>Baby Can I Hold You</li>
+                <li>Talkin' Bout a Revolution</li>
+                <li>Give Me One Reason</li>
+                <li>All That You Have Is Your Soul</li>
+                <li>Bang Bang Bang</li>
+                <li>Stand By Me</li>
+                <li>The Promise</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
